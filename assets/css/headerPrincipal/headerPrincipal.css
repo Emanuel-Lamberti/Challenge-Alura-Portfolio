@@ -1,0 +1,47 @@
+.header-principal {
+    background-color: var(--color-fondo-primario);
+    height: var(--altura-header-Escritorio);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.4s;
+}
+
+.scroll-down .header-principal {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .header-principal {
+    transform: none;
+}
+
+.header-principal__container {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    margin: var(--centrar-con-margin);
+    max-width: var(--tamaño-containerMaxWidth);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .header-principal {
+        height: var(--altura-header-Tablet);
+    }   
+
+    .header-principal__container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .header-principal {
+        height: var(--altura-header-Celular);
+    }
+
+    .header-principal__container {
+        flex-direction: column;
+        width: 100%;
+    }
+}

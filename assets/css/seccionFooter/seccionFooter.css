@@ -1,0 +1,78 @@
+.seccion-footer {
+    background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%,
+            rgba(245, 245, 245, 0.575) 100%),
+        url('../../img/fondo/fondo_descripciones.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.seccion-footer__copyright {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+.seccion-footer__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-footer__autor {
+    color: #2c2828;
+    font-weight: 800;
+}
+
+.seccion-footer__agradecimientos {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-footer__parrafo {
+    color: #2c2828;
+    font-weight: 800;
+}
+
+.seccion-footer__link {
+    color: #2c2828;
+    line-height: 1.5em;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .seccion-footer {
+        background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%,
+                rgba(245, 245, 245, 0.575) 100%),
+            url('../../img/fondo/fondo_mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .seccion-footer {
+        background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%,
+                rgba(245, 245, 245, 0.575) 100%),
+            url('../../img/fondo/fondo_mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .seccion-footer__copyright {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seccion-footer__autor {
+        text-align: center;
+    }
+
+    .seccion-footer__agradecimientos {
+        width: 100%;
+    }
+}

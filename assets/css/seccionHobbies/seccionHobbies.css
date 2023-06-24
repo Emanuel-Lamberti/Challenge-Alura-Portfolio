@@ -1,0 +1,46 @@
+.seccion-hobbies {
+    padding: var(--altura-header-Escritorio) 0;
+}
+
+.seccion-hobbies__icono {
+    width: 2.3125rem;
+    height: 2.3125rem;
+}
+
+.seccion-hobbies__icono--audifonos {
+    background: url("../../img/iconos/hobbies/headphones_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-hobbies__icono--pantalla {
+    background: url("../../img/iconos/hobbies/tv_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-hobbies__icono--libro {
+    background: url("../../img/iconos/hobbies/libro-abierto.png") center / 100% 100% no-repeat;
+}
+
+.seccion-hobbies__icono--cine {
+    background: url("../../img/iconos/hobbies/rollo-de-pelicula.png") center / 100% 100% no-repeat;
+}
+
+.seccion-hobbies__icono--cocina {
+    background: url("../../img/iconos/hobbies/forkspoon_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-hobbies__parrafo {
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .seccion-hobbies {
+        padding: var(--altura-header-Tablet) 0;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .seccion-hobbies {
+        padding: var(--altura-header-Celular) 0;
+    }
+}

@@ -1,0 +1,107 @@
+.formacion-academica {
+    padding: var(--altura-header-Escritorio) 0;
+}
+
+.formacion-academica__instituciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+    grid-template-rows: 1fr;
+    gap: 2em 1em;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.formacion-academica__institucion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: inherit;
+}
+
+.formacion-academica__link {
+    display: inline-block;
+    width: inherit;
+}
+
+.formacion-academica__imagen {
+    height: 16em;
+    width: inherit;
+}
+
+.formacion-academica__info {
+    margin: 0.5em 0 0 0;
+}
+
+.formacion-academica__formacion {
+    font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+}
+
+.formacion-academica__nombre {
+    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
+    font-weight: 500;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .formacion-academica {
+        padding: var(--altura-header-Tablet) 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1135px) {
+    .formacion-academica__instituciones {
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+        grid-template-rows: 1fr;
+    }
+
+    .formacion-academica__institucion {
+        height: auto;
+        width: inherit;
+    }
+
+    .formacion-academica__imagen {
+        height: 10.375em;
+        width: inherit;
+    }
+
+    .formacion-academica__formacion {
+        font-size: var(--tamañoLetraTablet-parrafosYLinks-dscBienvenida-subtitulosDscImagen);
+    }
+
+    .formacion-academica__nombre {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formacion-academica {
+        padding: var(--altura-header-Celular) 0;
+    }
+
+    .formacion-academica__instituciones {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .formacion-academica__institucion {
+        max-width: 18.5em;
+        width: 100%;
+    }
+
+    .formacion-academica__imagen {
+        height: 10.375em;
+        width: inherit;
+    }
+
+    .formacion-academica__formacion {
+        font-size: var(--tamañoLetraCelular-subtituloDescripcionImagen);
+    }
+
+    .formacion-academica__nombre {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+    }
+}

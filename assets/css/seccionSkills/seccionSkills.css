@@ -1,0 +1,58 @@
+.seccion-skills {
+    padding: var(--altura-header-Escritorio) 0;
+}
+
+.seccion-skills__icono {
+    width: 2.3125rem;
+    height: 2.3125rem;
+}
+
+.seccion-skills__icono--html5 {
+    background: url("../../img/iconos/skills/html5.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--javascript {
+    background: url("../../img/iconos/skills/js_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--css3 {
+    background: url("../../img/iconos/skills/css_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--java {
+    background: url("../../img/iconos/skills/java.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--react {
+    background: url("../../img/iconos/skills/react_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--node {
+    background: url("../../img/iconos/skills/nodejs_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--mysql {
+    background: url("../../img/iconos/skills/mysql.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--git {
+    background: url("../../img/iconos/skills/git.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__descripcion {
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .seccion-skills {
+        padding: var(--altura-header-Tablet) 0;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .seccion-skills {
+        padding: var(--altura-header-Celular) 0;
+    }
+}
